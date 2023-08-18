@@ -27,9 +27,15 @@ public class Main {
         contaPoupanca2.depositar(3600.0);
         contaPoupanca2.sacar(300.0);
 
-        System.out.println(conta1);
-        System.out.println(conta2);
-        System.out.println(contaPoupanca1);
-        System.out.println(contaPoupanca2);
+        printarNaTela(conta1);
+        printarNaTela(conta2);
+        printarNaTela(contaPoupanca1);
+        printarNaTela(contaPoupanca2);
+
+    }
+
+    private static void printarNaTela(Conta conta) {
+        System.out.println("---------- Extrato conta: "+conta.getTitular().getNome().toUpperCase()+" ----------\n"
+                + conta + "\n--------------------------------------");
     }
 }
