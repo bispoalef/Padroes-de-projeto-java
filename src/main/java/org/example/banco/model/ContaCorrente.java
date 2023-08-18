@@ -21,4 +21,9 @@ public class ContaCorrente extends Conta {
         this.limiteChequeEspecial = limiteChequeEspecial;
     }
 
+    @Override
+    public String toString() {
+        return super.toString() + "\n" +
+                "Limite Cheque Especial: R$" + limiteChequeEspecial;
+    }
 }

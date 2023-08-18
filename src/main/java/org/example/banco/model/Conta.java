@@ -55,7 +55,8 @@ public class Conta {
 
     @Override
     public String toString() {
-        return "Conta: " + numero + " titular " + titular + "\n" +
+        return "Conta: " + agencia + "/" + numero + "\n" +
+                "Titular: " + titular + "\n" +
                 "Saldo: R$" + saldo;
     }
 

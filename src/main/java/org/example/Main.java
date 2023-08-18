@@ -16,6 +16,11 @@ public class Main {
 
         conta1.setTitular(new Titular("Alef", "123.456.789-00"));
 
+        ContaPoupanca contaPoupanca1 = new ContaPoupanca("001", "101112", 1, 10);
+
+        contaPoupanca1.setTitular(new Titular("Viviane", "555.555.555-55"));
+
         System.out.println(conta1);
+        System.out.println(contaPoupanca1);
     }
 }
