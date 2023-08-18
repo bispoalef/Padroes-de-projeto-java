@@ -5,6 +5,7 @@ public class ContaCorrente extends Conta {
 
     public ContaCorrente(String agencia, String numero) {
         super(agencia, numero);
+        this.limiteChequeEspecial = 0.0;
     }
 
     public ContaCorrente(String agencia, String numero, double limiteChequeEspecial) {

@@ -8,5 +8,10 @@ import org.example.banco.model.Titular;
 public class Main {
     public static void main(String[] args) {
 
+
+        ContaCorrente conta1 = new ContaCorrente("01", "12345", 1000.0);
+
+
+        System.out.println(conta1);
     }
 }

@@ -44,4 +44,10 @@ public class Conta {
         }
     }
 
+    @Override
+    public String toString() {
+        return "Conta: " + numero + "\n" +
+                "Saldo: R$" + saldo;
+    }
+
 }
