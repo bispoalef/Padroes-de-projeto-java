@@ -4,6 +4,7 @@ public class Conta {
     private String agencia;
     private String numero;
     private Double saldo;
+    private Titular titular;
 
     public Conta(String agencia, String numero) {
         super();
@@ -44,9 +45,17 @@ public class Conta {
         }
     }
 
+    public Titular getTitular() {
+        return titular;
+    }
+
+    public void setTitular(Titular titular) {
+        this.titular = titular;
+    }
+
     @Override
     public String toString() {
-        return "Conta: " + numero + "\n" +
+        return "Conta: " + numero + " titular " + titular + "\n" +
                 "Saldo: R$" + saldo;
     }
 
